@@ -20,7 +20,7 @@ import os
 
 load_dotenv()
 
-api_key = os.getenv("api_key")
+api_key = os.getenv("API_KEY")
 
 genai.configure(api_key=api_key)
 # The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts
