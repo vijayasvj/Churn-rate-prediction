@@ -5,3 +5,4 @@ catboost
 lightgbm
 scikit-learn
 google-generativeai
+python-dotenv
