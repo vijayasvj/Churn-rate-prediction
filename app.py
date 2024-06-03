@@ -15,8 +15,14 @@ import xgboost as xgb
 import lightgbm as lgbm
 
 import google.generativeai as genai
+from dotenv import load_dotenv
+import os
 
-genai.configure(api_key="AIzaSyA1Kv4IFPrh6u60mnLfZgKfZlRQk0K3Q3A")
+load_dotenv()
+
+api_key = os.getenv("api_key")
+
+genai.configure(api_key=api_key)
 # The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts
 model = genai.GenerativeModel('gemini-1.5-flash')
 
